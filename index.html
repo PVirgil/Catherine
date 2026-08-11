@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="CSS // LIMITS — an interactive exhibition exploring how far modern CSS can go." />
+  <title>CSS // LIMITS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CSS Limits home">CSS <span>//</span> LIMITS</a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#light">LIGHT</a>
+      <a href="#space">SPACE</a>
+      <a href="#type">TYPE</a>
+      <a href="#impossible">IMPOSSIBLE</a>
+    </nav>
+    <button class="code-toggle" id="codeToggle" type="button">VIEW THE CSS</button>
+  </header>
+
+  <aside class="power-panel" aria-label="CSS power control">
+    <div class="power-label">
+      <span>CSS POWER</span>
+      <output id="powerValue" for="powerRange">100</output>
+    </div>
+    <input id="powerRange" type="range" min="10" max="100" value="100" />
+  </aside>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">AN INTERACTIVE CSS EXHIBITION</p>
+        <h1>
+          <span>HOW FAR</span>
+          <span>CAN CSS</span>
+          <span class="outline">GO?</span>
+        </h1>
+        <div class="hero-meta">
+          <p>Modern CSS. Minimal JavaScript. No WebGL. No canvas.</p>
+          <a href="#light" class="scroll-link">ENTER THE EXPERIMENT ↓</a>
+        </div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbital orbital-a"></div>
+        <div class="orbital orbital-b"></div>
+        <div class="orbital orbital-c"></div>
+        <div class="orbital-core"></div>
+      </div>
+    </section>
+
+    <section class="section split" id="light">
+      <div class="section-copy">
+        <p class="chapter">01 / LIGHT</p>
+        <h2>Paint with gradients, masks and blur.</h2>
+        <p>Layered radial and conic gradients create a luminous material system with no raster image assets.</p>
+      </div>
+      <div class="light-card experiment">
+        <div class="light-surface"></div>
+        <div class="light-grid"></div>
+        <div class="light-caption">
+          <span>PROCEDURAL SURFACE</span>
+          <strong>CSS ONLY</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="space">
+      <div class="section-copy wide">
+        <p class="chapter">02 / SPACE</p>
+        <h2>Turn flat DOM into architecture.</h2>
+      </div>
+
+      <div class="scene experiment" aria-label="Interactive 3D CSS cube">
+        <div class="cube-wrap">
+          <div class="cube">
+            <div class="face front">CSS</div>
+            <div class="face back">3D</div>
+            <div class="face right">SPACE</div>
+            <div class="face left">DOM</div>
+            <div class="face top">PURE</div>
+            <div class="face bottom">DEPTH</div>
+          </div>
+        </div>
+        <div class="scene-floor"></div>
+      </div>
+    </section>
+
+    <section class="section split reverse" id="motion">
+      <div class="motion-field experiment" aria-hidden="true">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="ring r4"></div>
+        <div class="ring r5"></div>
+        <div class="motion-dot"></div>
+      </div>
+      <div class="section-copy">
+        <p class="chapter">03 / MOTION</p>
+        <h2>Animate systems, not decorations.</h2>
+        <p>Custom properties let one interaction drive rotation, light, position, scale and color simultaneously.</p>
+      </div>
+    </section>
+
+    <section class="section type-section" id="type">
+      <div class="section-copy wide">
+        <p class="chapter">04 / TYPE</p>
+        <h2>Typography becomes an object.</h2>
+      </div>
+
+      <div class="type-stage experiment">
+        <div class="type-line" data-text="VARIABLE">VARIABLE</div>
+        <div class="type-line outline-type" data-text="PRESSURE">PRESSURE</div>
+        <div class="type-line compressed" data-text="SYSTEM">SYSTEM</div>
+      </div>
+    </section>
+
+    <section class="section grid-section" id="impossible">
+      <div class="section-copy wide">
+        <p class="chapter">05 / IMPOSSIBLE</p>
+        <h2>Build interfaces that refuse to stay flat.</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="tilt-card experiment">
+          <div class="card-index">A</div>
+          <h3>PARALLAX</h3>
+          <p>Pointer-fed custom properties move nested layers at different depths.</p>
+          <span class="card-chip">transform</span>
+        </article>
+        <article class="tilt-card experiment glass">
+          <div class="card-index">B</div>
+          <h3>GLASS</h3>
+          <p>Backdrops, masks and highlights create transparent synthetic material.</p>
+          <span class="card-chip">backdrop-filter</span>
+        </article>
+        <article class="tilt-card experiment spectrum">
+          <div class="card-index">C</div>
+          <h3>SPECTRUM</h3>
+          <p>Conic gradients and blend modes synthesize iridescent surfaces.</p>
+          <span class="card-chip">mix-blend-mode</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section finale">
+      <div class="finale-grid" aria-hidden="true"></div>
+      <p class="chapter">06 / THE LIMIT</p>
+      <h2>THE LIMIT WASN'T CSS.<br><span>IT WAS THE IDEA.</span></h2>
+      <div class="brace">{ }</div>
+      <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">PUT YOUR GITHUB LINK HERE ↗</a>
+    </section>
+  </main>
+
+  <dialog id="codePanel" class="code-panel">
+    <div class="code-panel-head">
+      <div>
+        <span class="chapter">LIVE SOURCE</span>
+        <h2>CSS behind the current exhibition</h2>
+      </div>
+      <button id="closeCode" type="button" aria-label="Close source viewer">×</button>
+    </div>
+    <pre><code id="codeSample"></code></pre>
+  </dialog>
+
+  <script src="./script.js"></script>
+</body>
+</html>
