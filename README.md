@@ -353,7 +353,7 @@ The site includes a built-in source viewer.
 
 Selecting **VIEW THE CSS** reveals examples of the CSS responsible for the experiment currently visible on screen.
 
-This was intentionally included because CSS // LIMITS is not meant to hide its tricks.
+This was intentionally included because CATHERINE // ARTISTRY is not meant to hide its tricks.
 
 The visual effect is only half of the project.
 
