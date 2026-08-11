@@ -664,3 +664,17 @@ pre {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Mobile: remove blue tap/focus box from code viewer close button */
+#closeCode {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+#closeCode:focus,
+#closeCode:focus-visible,
+#closeCode:active {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
