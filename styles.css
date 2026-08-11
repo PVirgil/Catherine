@@ -172,8 +172,9 @@ a { color: inherit; }
 
 .outline,
 .outline-type {
-  color: transparent;
+  color: var(--bg);
   -webkit-text-stroke: 1.5px var(--fg);
+  paint-order: stroke fill;
 }
 
 .hero-meta {
@@ -537,8 +538,9 @@ a { color: inherit; }
 }
 
 .finale h2 span {
-  color: transparent;
+  color: var(--bg);
   -webkit-text-stroke: 1.5px var(--fg);
+  paint-order: stroke fill;
 }
 
 .brace {
